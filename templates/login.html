@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.8/datatables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.8/datatables.min.js"></script>
+    <script src="https://kit.fontawesome.com/71f1c28685.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/styles/login.css">
+</head>
+<body>
+    <div class="header">
+       {% for message in get_flashed_messages() %}
+            <div class="alert alert-succes alert-dismissible">{{message}}</div>
+        {% endfor%}
+    </div>
+    <div class="glass-container">
+        <div class="login-box">
+            <h2>Iniciar Sesion</h2>
+            <form action="#" method="POST">
+
+                <input type="text" id="username" name="username" required placeholder="Usuario">
+                
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
+                
+                <div class="options">
+                    <!-- <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label> -->
+                    <!-- <a href="#">Forgot Password?</a> -->
+                </div>
+                
+                <button type="submit">Iniciar Sesion</button>
+
+                <p>No tienes cuenta? <a href="{{ url_for('register')}} " id="register"> Registrarse</a></p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Creado y desarrollado por: Juan Felipe Lopez Alvarez (Daron_dev)</p>
+            <a href="https://github.com/Daron-dev-7u7">github <i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

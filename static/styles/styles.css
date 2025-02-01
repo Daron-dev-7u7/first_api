@@ -1,0 +1,103 @@
+body {
+    font-family: arial, sans-serif;
+}
+
+header > h2 {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+header > p {
+    margin-left: 20px;
+}
+
+table {
+    margin: auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+th {
+    text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+  td, th {
+    border: 50px solid #a19f9f;
+    padding: 2px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgb(56, 202, 183);
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  .menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .menu-horizontal > li:hover{
+    cursor: pointer;
+  }
+  .menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  .menu-horizontal li:hover .menu-vertical{
+    display: block;
+  }
+  .menu-vertical li:hover{
+    background-color: black;
+  }
+  
+  .menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 5px 15px 20px;
+  }
+
+
+  .setting {
+    margin-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  /*  login  */
+
+  
